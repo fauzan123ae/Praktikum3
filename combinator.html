@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        div p { /* no 1 */
+            color: red;
+        }
+        div > p { /* no 2 */
+            background-color: yellow;
+        }
+        div + p { /* no 3 */
+            background-color: darkgray;
+        }
+        div ~ p { /* no 4 */
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Selektor No 1 menghasilkan warna teks merah pada paragraf ini.</p>
+        <p>Selektor No 2 menghasilkan latar belakang warna kuning pada paragraf ini.</p>
+    </div>
+    <p>Selektor No 3 menghasilkan latar belakang warna abu-abu gelap pada paragraf ini.</p>
+    <p>Selektor No 4 menghasilkan warna teks cyan pada paragraf ini.</p>
+</body>
+</html>
